@@ -1,0 +1,25 @@
+{
+	"name":"samsonos/cms_filter",
+	"author":"Vitaly Iegorov <egorov@samsonos.com>",
+    "description":"SamsonCMS Material filtering module",
+    "minimum-stability":"dev",
+	"require":
+	{
+		"samsonos/php_activerecord":"*"
+	},
+    "license":"Open Software License (OSL) v 3.0",
+    "homepage":"http://samsonphp.com/",
+    "autoload" : {
+        "classmap": ["src/"],
+        "psr-0": {
+            "samsonos\\cms\\filter": "src/"
+        },
+        "files": ["src/global.php"]
+    },
+    "require-dev": {
+        "satooshi/php-coveralls": "dev-master",
+        "squizlabs/php_codesniffer": "2.0.*@dev",
+        "phpunit/phpunit": "4.2.*",
+        "phpunit/dbunit": "1.3.*"
+    }
+}
